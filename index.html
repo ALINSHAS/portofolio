@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinsha | Interactive Portfolio</title>
+    
+    <!-- Modern Bold Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- Animated Constellation Background -->
+    <canvas id="constellation-canvas"></canvas>
+
+    <!-- Side Navigation -->
+    <div class="side-nav">
+        <a href="#hero" class="nav-dot active" data-target="hero"><span class="nav-label">Home</span></a>
+        <a href="#about" class="nav-dot" data-target="about"><span class="nav-label">About</span></a>
+        <a href="#skills" class="nav-dot" data-target="skills"><span class="nav-label">Arsenal</span></a>
+        <a href="#projects" class="nav-dot" data-target="projects"><span class="nav-label">Work</span></a>
+        <a href="#education" class="nav-dot" data-target="education"><span class="nav-label">Education</span></a>
+    </div>
+
+
+    <!-- Fixed Navigation -->
+    <nav class="navbar">
+        <a href="#hero" class="logo">ALINSHA</a>
+        <div class="nav-indicator">
+            <span id="scroll-progress">01 / 05</span>
+        </div>
+    </nav>
+
+    <!-- Snap Scroll Container -->
+    <main class="snap-container" id="snap-container">
+        
+        <!-- 01. HERO SECTION -->
+        <section id="hero" class="snap-section">
+            <div class="content-wrapper text-center">
+                <h1 class="mega-title hero-title">ALINSHA S</h1>
+                <h2 class="sub-mega">Python Developer | Software Engineer | UI/UX Designer</h2>
+                <div class="contact-links mt-4">
+                    <a href="mailto:alinshaalinsha@gmail.com" class="clean-btn">Contact Me</a>
+                    <a href="https://linkedin.com/in/alinsha-s" target="_blank" class="clean-btn">LinkedIn</a>
+                    <a href="https://github.com/ALINSHAS" target="_blank" class="clean-btn">GitHub</a>
+                </div>
+                <div class="scroll-prompt">
+                    <p>Swipe or Scroll to Explore</p>
+                    <div class="arrow-down"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02. ABOUT & SUMMARY -->
+        <section id="about" class="snap-section">
+            <div class="content-wrapper split-layout">
+                <div>
+                    <h2 class="section-title mb-2">About Me.</h2>
+                    <p class="large-text">
+                        I'm a Computer Science graduate specializing in <strong>Python Full Stack Development</strong> and <strong>UI/UX Design</strong>. I build responsive, scalable, and intuitive web applications by combining clean code with thoughtful design. 
+                    </p>
+                    <p class="large-text mt-3">
+                        Passionate about transforming ideas into functional, user-centric digital experiences using Python, React, and Figma.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <p class="large-text mt-2">
+                        I specialize in <strong>Python Development, Artificial Intelligence, and Blockchain Technology</strong>. Whether it's architecting a secure e-voting system using Solidity and Ethereum, or engineering an AI-powered job portal with dynamic algorithms, I thrive on solving complex problems. I also hold a deep passion for UI/UX design, ensuring that every powerful backend I build is matched with a breathtaking, intuitive frontend experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03. SKILLS SECTION -->
+        <section id="skills" class="snap-section">
+            <div class="content-wrapper">
+                <h2 class="section-title text-center mb-4">The Arsenal.</h2>
+                <div class="arsenal-static-grid">
+                    
+                    <div class="project-card interactive-card">
+                        <h3>Backend Architecture</h3>
+                        <span class="badge">Core Systems</span>
+                        <ul class="arsenal-bullets mt-3">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>MySQL</li>
+                            <li>Node.js</li>
+                            <li>C</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-card interactive-card">
+                        <h3>Web3 & Crypto</h3>
+                        <span class="badge">Blockchain Tech</span>
+                        <ul class="arsenal-bullets mt-3">
+                            <li>Solidity</li>
+                            <li>Ethereum</li>
+                            <li>Web3.js</li>
+                            <li>Ganache</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card interactive-card">
+                        <h3>Frontend Engineering</h3>
+                        <span class="badge">User Interfaces</span>
+                        <ul class="arsenal-bullets mt-3">
+                            <li>React</li>
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card interactive-card">
+                        <h3>Design & Tools</h3>
+                        <span class="badge">Workflow</span>
+                        <ul class="arsenal-bullets mt-3">
+                            <li>Figma</li>
+                            <li>Canva</li>
+                            <li>Git & GitHub</li>
+                            <li>Jupyter Notebook</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 05. PROJECTS SECTION -->
+        <section id="projects" class="snap-section">
+            <div class="content-wrapper">
+                <h2 class="section-title mb-4">Featured Work.</h2>
+                
+                <div class="project-slider">
+                    
+                    <div class="project-card interactive-card">
+                        <h3>SecureVote</h3>
+                        <span class="badge">Blockchain E-Voting System</span>
+                        <div class="tech-stack-mini">Python | Solidity | Web3.js | Ethereum | Ganache | MySQL</div>
+                        <ul class="project-bullets">
+                            <li>Developed a blockchain-based electronic voting system using Ethereum smart contracts to ensure secure and transparent vote recording.</li>
+                            <li>Integrated facial authentication and multi-factor verification to validate voter identity before vote casting.</li>
+                            <li>Implemented smart contract logic to prevent duplicate voting and maintain election integrity.</li>
+                            <li>Designed responsive web interfaces for voters and administrators using HTML, CSS, and JavaScript.</li>
+                            <li>Connected the frontend with blockchain using Web3.js and Ganache for decentralized transaction management.</li>
+                            <li>Stored voter information securely using MySQL and optimized the application for usability and reliability.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card interactive-card">
+                        <h3>AI Job Platform</h3>
+                        <span class="badge">AI-Based Job Management Platform</span>
+                        <div class="tech-stack-mini">Python | MySQL | HTML5 | CSS3 | JavaScript</div>
+                        <ul class="project-bullets">
+                            <li>Developed an AI-powered job management platform connecting job seekers with recruiters.</li>
+                            <li>Designed responsive dashboards for job posting, application tracking, and profile management.</li>
+                            <li>Implemented intelligent job recommendation features based on user preferences.</li>
+                            <li>Built CRUD operations for job listings, applications, and user profiles using Python and MySQL.</li>
+                            <li>Developed secure database integration for managing recruiter, candidate, and job information.</li>
+                            <li>Improved user experience with intuitive navigation and responsive UI components.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card interactive-card">
+                        <h3>Personal Portfolio</h3>
+                        <span class="badge">Personal Portfolio Website</span>
+                        <div class="tech-stack-mini">HTML5 | CSS3 | JavaScript</div>
+                        <ul class="project-bullets">
+                            <li>Designed and developed a fully responsive portfolio website showcasing projects, certifications, technical skills, and publications.</li>
+                            <li>Built a clean, modern user interface with mobile-first responsive design principles.</li>
+                            <li>Optimized page performance and navigation to improve user experience.</li>
+                            <li>Integrated GitHub and LinkedIn links for professional networking.</li>
+                            <li>Applied UI/UX design principles using Figma during the design process.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 06. EDUCATION & CERTS -->
+        <section id="education" class="snap-section">
+            <div class="content-wrapper split-layout">
+                <div class="left-col">
+                    <h2 class="section-title">Credentials.</h2>
+                    
+                    <div class="credential-box mt-3">
+                        <div class="cred-year">2026</div>
+                        <h3>B.Tech - Computer Science & Engineering</h3>
+                        <p>College of Engineering Kottarakkara (KTU)</p>
+                    </div>
+
+                    <div class="credential-box mt-3">
+                        <div class="cred-year">Feb 2026</div>
+                        <h3>IJERT Research Publication</h3>
+                        <p>SecureVote: Enhancing Electoral Integrity through Blockchain and Biometric Multi-Factor Authentication</p>
+                    </div>
+                </div>
+                
+                <div class="right-col scrollable-certs">
+                    <h3 class="cert-heading">Certifications</h3>
+                    <ul class="fancy-list">
+                        <li>UI/UX Design Internship (DraftedLayer)</li>
+                        <li>Generative AI (Databricks)</li>
+                        <li>Prompt Engineering with GitHub Copilot (Microsoft & Simplilearn)</li>
+                        <li>Introduction to Software Engineering (IBM Coursera)</li>
+                        <li>Python Basic (HackerRank) & Revisiting OOP (CodeSignal)</li>
+                        <li>Foundation of Electric & Hybrid Vehicles (TECHMAGI / IIT Delhi)</li>
+                        <li>Self Driving Electric Vehicles (TECHMAGI / IIT Kharagpur)</li>
+                        <li>Basics of AutoCAD & SketchUP (TECHMAGI / IIT Kharagpur)</li>
+                        <li>Git & GitHub Workshop (FOSS VJCET)</li>
+                        <li>Future of Full Stack Development (GUVI)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
