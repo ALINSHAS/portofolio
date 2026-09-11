@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#030303">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Alinsha S - Python Full Stack Developer, Software Engineer & UI/UX Designer Portfolio">
     <title>alinsha | Interactive Portfolio</title>
     
     <!-- Modern Bold Fonts -->
@@ -48,9 +52,9 @@
                 <h1 class="mega-title hero-title">ALINSHA S</h1>
                 <h2 class="sub-mega">Python Developer | Software Engineer | UI/UX Designer</h2>
                 <div class="contact-links mt-4">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alinshaalinsha@gmail.com"class="clean-btn"target="_blank">Contact Me</a>
-                    <a href="https://linkedin.com/in/alinsha-s" target="_blank" class="clean-btn">LinkedIn</a>
-                    <a href="https://github.com/ALINSHAS" target="_blank" class="clean-btn">GitHub</a>
+                    <a href="mailto:alinshaalinsha@gmail.com" class="clean-btn" aria-label="Email Alinsha">Contact Me</a>
+                    <a href="https://linkedin.com/in/alinsha-s" target="_blank" rel="noopener noreferrer" class="clean-btn" aria-label="LinkedIn Profile">LinkedIn</a>
+                    <a href="https://github.com/ALINSHAS" target="_blank" rel="noopener noreferrer" class="clean-btn" aria-label="GitHub Profile">GitHub</a>
                 </div>
                 <div class="scroll-prompt">
                     <p>Swipe or Scroll to Explore</p>
@@ -68,7 +72,7 @@
                         I'm a Computer Science graduate specializing in <strong>Python Full Stack Development</strong> and <strong>UI/UX Design</strong>. I build responsive, scalable, and intuitive web applications by combining clean code with thoughtful design. 
                     </p>
                     <p class="large-text mt-3">
-                        Passionate about transforming ideas into functional, user-centric digital experiences using Python, React, and Figma.
+                        Passionate about transforming ideas into functional, user-centric digital experiences using Python, modern web technologies, and Figma.
                     </p>
                 </div>
                 <div class="text-center">
@@ -113,11 +117,11 @@
                         <h3>Frontend Engineering</h3>
                         <span class="badge">User Interfaces</span>
                         <ul class="arsenal-bullets mt-3">
-                            <li>React</li>
                             <li>JavaScript</li>
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>Tailwind CSS</li>
+                            <li>Bootstrap</li>
                         </ul>
                     </div>
 
@@ -229,6 +233,30 @@
         </section>
 
     </main>
+
+    <!-- Mobile Bottom Navigation Dock -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+        <a href="#hero" class="mobile-nav-item active" data-target="hero" aria-label="Home section">
+            <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span>Home</span>
+        </a>
+        <a href="#about" class="mobile-nav-item" data-target="about" aria-label="About section">
+            <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>About</span>
+        </a>
+        <a href="#skills" class="mobile-nav-item" data-target="skills" aria-label="Arsenal skills section">
+            <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span>Arsenal</span>
+        </a>
+        <a href="#projects" class="mobile-nav-item" data-target="projects" aria-label="Projects section">
+            <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            <span>Work</span>
+        </a>
+        <a href="#education" class="mobile-nav-item" data-target="education" aria-label="Education section">
+            <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            <span>Edu</span>
+        </a>
+    </nav>
 
     <script src="script.js"></script>
 </body>
